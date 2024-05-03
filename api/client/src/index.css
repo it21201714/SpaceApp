@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+
+
+  color: white !important;
+  background-color: #030615 !important;
+
+  font-synthesis: none !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+*{
+  padding:0 ;
+  margin:0;
+  box-sizing: border-box ;
+}
+
+
+.flexing{
+  min-height: 100vh !important;
+  display: flex !important;
+  display: relative !important;
+}
+
+
+
+.imgContainer{
+  display: flex !important;
+  flex-direction: column !important;
+  max-height: 100vh !important;
+  width: 100% !important;
+}
+
+.bgImage{
+  width: 100% !important;
+  height: 100% !important;
+  flex: 1 !important;
+  object-fit: cover !important;
+}
+
+.loader{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.loader h1{
+  padding-top: 1rem !important;
+  margin-left: 2rem !important;
+}
+
+footer{
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem !important;
+  padding: 1rem !important;
+
+}
+
+footer div{
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.4rem !important;
+}
+
+footer h2{
+  font-size: 1.4rem !important;
+}
+
+footer h1{
+  font-size: 0.9rem !important;
+  font-weight:200 !important;
+
+}
+
+footer button{
+  background: transparent !important; 
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+  padding: 1rem !important;
+  transition-duration: 200ms !important; 
+  cursor: pointer !important;
+}
+
+footer button i{
+  font-size: 1.3rem !important;
+
+}
+
+footer button:hover{
+ opacity: 0.7 !important;
+}
+
+.bgOverlay{
+  position: absolute !important;
+  inset: 0 !important;
+  background-color: #030615 !important;
+  opacity: 1 !important;
+}
+
+.bgGradient{
+  position:absolute !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  background: linear-gradient(to top, #030615 ,rgba(255,255,255,0)) !important;
+}
+
+.sidebar{
+  position:fixed !important;
+  inset:0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  z-index: 0 !important;
+}
+
+
+
+.sidebarContents{
+  z-index: 15 !important; 
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  padding: 1rem !important;
+  height: 100% !important;
+  width: 100% !important;
+  max-width: 800px !important;
+  margin-left: auto !important;
+  background: #030615 !important;
+
+}
+
+.sidebarContents h2 {
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
+.sidebarContents div{
+  flex:1 !important;
+}
+
+.sidebarContents button {
+  background: transparent !important;
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+  margin-right: auto !important;
+  cursor: pointer !important;
+  transition-duration: 200ms !important;
+  padding: 1rem 0!important;
+}
+
+.sidebarContents button:hover {
+  opacity: 0.7 !important;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.descriptionTitle {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+
+
+@media (min-width: 640px){
+  .sidebar{
+    position: relative !important;
+    inset:unset !important;
+    min-width: 30% !important;
+    box-shadow: 0 0 40px 1px #030615 !important;
+  }
+
+  .sidebarContents{
+    margin:unset !important;
+  }
+}

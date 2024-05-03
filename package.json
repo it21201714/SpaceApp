@@ -1,0 +1,26 @@
+{
+  "name": "se3040-assignment02-it21201714",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/V1F4A3D5)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start" : "node api/index.js",
+    "dev": "nodemon api/index.js",
+    "build": "npm install --prefix ./client && npm run build  --prefix ./client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.3",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}
