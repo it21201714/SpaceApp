@@ -40,7 +40,7 @@ export default function SignUp() {
             }
             setLoading(false);
             if(res.ok){
-                navigate('/signin');
+                navigate('/');
             }
         }catch(error){
             setErrorMessage('Something went wrong');
